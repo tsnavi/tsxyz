@@ -32,7 +32,7 @@ li a:hover {
 
 hr {
   border: none;
-  height: 3px; /* Adjust the thickness of the line */
+  height: 1px; /* Adjust the thickness of the line */
   width: 20vw;
   background-color: #c0c0c0; /* Set the color of the line */
   margin: 20px 0; /* Add spacing above and below the line */
@@ -45,5 +45,38 @@ hr {
   transform: translateX(-50%); /* Move back 50% of its own width */
 }
 
+#movable-window {
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  z-index: 1000;
+  padding: 10px;
+  overflow-y: auto;
+  cursor:move;
+}
 
+/* Styling for the toots list */
+#toots-list {
+  list-style: none;
+  padding: 0;
+}
+
+#toots-list li {
+  margin-bottom: 10px; /* Add margin between each toot */
+}
+
+#toots-list p {
+  word-wrap:break-word;
+  overflow-wrap:break-word; /*prevent horizontal scrollbar*/
+}
+
+/* CSS to hide the movable window on mobile devices */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  #movable-window {
+    display: none;
+  }
+}
 

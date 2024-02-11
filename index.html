@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<!--size of url preview is 21px height -->
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of tsxyz</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body style="display:flex; justify-content: center; padding:50px;">
@@ -15,12 +11,95 @@
       <li><a href="/bookclub">Book Club</a></li>
       <li><a href="/cooking">Cooking</a></li>
       <li><a href="/deutsch">Deutsch</a></li>
+      <li><a href="/journal">Journal</a></li>
       <li><a href="/micro">Updates</a></li>
     </ul>
     <hr>
     <ul>
     <li><a rel=”nofollow” href="https://pastebin.com/f6qwsa1U">Contact</a></li>
     </ul>
+    
+        <!-- Movable window -->
+    <div id="movable-window">
+      <ul id="toots-list"></ul>
+    </div>
+    
+    <!-- JavaScript for making the window movable and fetching toots -->
+    <script>
+      // Make the window movable
+      const windowElement = document.getElementById('movable-window');
+      let isDragging = false;
+      let offsetX, offsetY;
+
+      windowElement.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - windowElement.getBoundingClientRect().left;
+        offsetY = e.clientY - windowElement.getBoundingClientRect().top;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+          const x = e.clientX - offsetX;
+          const y = e.clientY - offsetY;
+          windowElement.style.left = x + 'px';
+          windowElement.style.top = y + 'px';
+        }
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+      
+      // Fetch and display latest toots
+      fetch('micro/mastodon_feed.rss')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.text();
+          })
+          .then(data => {
+              const parser = new DOMParser();
+              const xmlDoc = parser.parseFromString(data, 'text/xml');
+              const items = xmlDoc.querySelectorAll('item');
+              const tootsList = document.getElementById('toots-list');
+              if (!tootsList) {
+                  throw new Error('Toots list element not found');
+              }
+              let count = 0;
+              items.forEach(item => {
+                  if (count < 4) {
+                      const descriptionElement = item.querySelector('description');
+                      if (descriptionElement) {
+                          const description = descriptionElement.textContent;
+                          const listItem = document.createElement('li');
+                          listItem.innerHTML = parseHTML(description);
+                          tootsList.appendChild(listItem);
+                          count++;
+                      }
+                  } else {
+                      return;
+                  }
+              });
+              if (count === 0) {
+                  throw new Error('No toots found');
+              }
+          })
+          .catch(error => console.error('Error fetching/displaying toots:', error));
+      
+      // Function to parse HTML and extract text content
+      function parseHTML(html) {
+          var temp = document.createElement('div');
+          temp.innerHTML = html;
+          // Convert links to anchor elements
+          temp.querySelectorAll('a').forEach(a => {
+              a.setAttribute('target', '_blank'); // Open links in new tab
+          });
+          return temp.innerHTML;
+      }
+    </script>
+    
     <div id="webring"><a href="https://wiredcollective.neocities.org/"><img src="https://wiredcollective.neocities.org/webringimages/wiredcollectivebutton.png" alt="WIRED COLLECTIVE WEBRING"></a></div>
+    <link href="https://github.com/tsnavi" rel="me">
   </body>
 </html>
