@@ -1,0 +1,49 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "MS Gothic", Verdana;
+  display: flex;
+  flex-direction:column;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+#links a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+  color: #ffffff;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 50% 6px;
+}
+
+hr {
+  border: none;
+  height: 3px; /* Adjust the thickness of the line */
+  width: 20vw;
+  background-color: #c0c0c0; /* Set the color of the line */
+  margin: 20px 0; /* Add spacing above and below the line */
+}
+
+#webring {
+  position: fixed;
+  bottom: 5%; /* 5% margin from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Move back 50% of its own width */
+}
+
+
+
