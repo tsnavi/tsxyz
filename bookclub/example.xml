@@ -1,0 +1,153 @@
+<books>
+    <book>
+      <title>Diary</title>
+      <author>Chuck Palahniuk</author>
+      <selectedBy>Tilly</selectedBy>
+    </book>
+    <book>
+      <title>Chain-Gang All-Stars</title>
+      <author>Nana Kwame Adjei-Brenyah</author>
+      <selectedBy>Rob</selectedBy>
+    </book>
+    <book>
+      <title>The End Is Always Near</title>
+      <author>Dan Carlin</author>
+      <selectedBy>John</selectedBy>
+    </book>
+    <book>
+      <title>Pet Sematary</title>
+      <author>Stephen King</author>
+      <selectedBy>Sean</selectedBy>
+    </book>
+    <book>
+      <title>This Tender Land</title>
+      <author>William Kent Krueger</author>
+      <selectedBy>Rob</selectedBy>
+    </book>
+    <book>
+      <title>Cosmicomics</title>
+      <author>Italo Calvino</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>Leviathan Wakes</title>
+      <author>James S. A. Corey</author>
+      <selectedBy>John</selectedBy>
+    </book>
+    <book>
+      <title>Norse Mythology</title>
+      <author>Neil Gaiman</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>A Farewell To Arms</title>
+      <author>Ernest Hemingway</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
+      <title>The Gods Themselves</title>
+      <author>Isaac Asimov</author>
+      <selectedBy>Sean</selectedBy>
+    </book>
+    <book>
+      <title>The Truth</title>
+      <author>Terry Pratchet</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>The Buried Giant</title>
+      <author>Kazuo Ishiguro</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>Flowers For Algernon</title>
+      <author>Daniel Keyes</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>Alice In Wonderland</title>
+      <author>Lewis Carroll</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
+      <title>Beautiful World, Where Are You</title>
+      <author>Sally Rooney</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>Titus Groan</title>
+      <author>Mervyn Peake</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>The Dispossessed</title>
+      <author>Ursula K. Le Guin</author>
+      <selectedBy>Rob</selectedBy>
+    </book>
+    <book>
+      <title>Pastoralia</title>
+      <author>George Saunders</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>The Martian</title>
+      <author>Andy Weir</author>
+      <selectedBy>Sean</selectedBy>
+    </book>
+    <book>
+      <title>Something Wicked This Way Comes</title>
+      <author>Ray Bradbury</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
+      <title>Fear and Loathing in Las Vegas</title>
+      <author>Hunter S. Thompson</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>The Amazing Adventures Of Kavalier And Clay</title>
+      <author>Michael Chabon</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <book>
+      <title>The Romance of the Three Kingdoms</title>
+      <author>Luo Guanzhong</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>The Sea Wolf: The Life of Admiral Cochrane</title>
+      <author>Ian Grimble</author>
+      <selectedBy>John</selectedBy>
+    </book>
+    <book>
+      <title>Shuggie Bain</title>
+      <author>Douglas Stuart</author>
+      <selectedBy>Joe</selectedBy>
+    </book>
+    <book>
+      <title>Piranesi</title>
+      <author>Susanna Clarke</author>
+      <selectedBy>John</selectedBy>
+    </book>
+    <book>
+      <title>The Brief Wonderous Life of Oscar Wao</title>
+      <author>Junot Díaz</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
+      <title>Bad Science</title>
+      <author>Ben Goldacre</author>
+      <selectedBy>John</selectedBy>
+    </book>
+    <book>
+      <title>Sapiens</title>
+      <author>Yuval Noah Harari</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
+      <title>The Man In The High Castle</title>
+      <author>Philip K. Dick</author>
+      <selectedBy>Tom</selectedBy>
+    </book>
+    <!-- Add more book entries as needed -->
+</books>

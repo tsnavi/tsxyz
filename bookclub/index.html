@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>"/>
+    <title>Book Club 📚</title>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const bookList = document.getElementById('bookList');
+
+    // Check if the bookList element exists
+    if (!bookList) {
+        console.error('Error: Unable to find the bookList element');
+        return;
+    }
+
+    // Fetch the XML file
+    fetch('example.xml')
+        .then(response => response.text())
+        .then(data => {
+            // Parse the XML data
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "application/xml");
+
+            // Check if parsing is successful
+            if (xmlDoc.querySelector('parsererror')) {
+                console.error('Error parsing XML:', xmlDoc.querySelector('parsererror').textContent);
+                return;
+            }
+
+            // Loop through each book entry in the XML
+            const books = xmlDoc.querySelectorAll('book');
+            books.forEach((book, index) => {
+                // Check if the required elements exist before accessing their content
+                const titleElement = book.querySelector('title');
+                const authorElement = book.querySelector('author');
+                const selectedByElement = book.querySelector('selectedBy');
+
+                if (titleElement && authorElement && selectedByElement) {
+                    const title = titleElement.textContent;
+                    const author = authorElement.textContent;
+                    const selectedBy = selectedByElement.textContent;
+
+                    // Create a new list item with the desired formatting
+                    const listItem = document.createElement('li');
+
+                    // Apply specific styles to the first entry (most recent)
+                    if (index === 0) {
+                        listItem.style.fontSize = '1.33em';
+                    }
+
+                    listItem.innerHTML = `
+                        <span style="text-decoration: underline;">${title}</span> <i>by <span style="text-decoration: underline;">${author}</span></i> <span style="color: #666; font-size: 0.8em;">(${selectedBy})</span>
+                    `;
+
+                    // Set line-height for spacing between entries
+                    listItem.style.lineHeight = '1.5';
+
+                    // Append the list item to the scrolling column
+                    bookList.appendChild(listItem);
+                } else {
+                    console.warn('Skipping incomplete book entry:', book);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching XML:', error));
+});
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <article class="scrolling-column" id="bookList">
+            <h1>Book Club record of books 📚</h1>
+            <!-- Content for the scrolling column will be dynamically populated here -->
+        </article>
+        <aside class="static-column">
+            <ul>
+                <li>Knowles</li>
+                <li>Tom</li>
+                <li>Sean</li>
+                <li>Joe</li>
+                <li>John</li>
+                <li>Rob</li>
+                <li class="rainbow">Tilly</li>
+            </ul>
+                  
+          <style>
+              .rotate {
+                  transform: rotate(90deg);
+              }
+          </style>
+
+          <script>
+              function toggleList(elementId) {
+                  var content = document.getElementById(elementId);
+                  var arrow = content.previousElementSibling.querySelector('.arrow');
+          
+                  content.classList.toggle('show');
+                  arrow.classList.toggle('rotate');
+              }
+          
+              document.addEventListener('DOMContentLoaded', function() {
+                  document.querySelectorAll('.collapsible-header').forEach(function(header) {
+                      header.addEventListener('click', function() {
+                          var content = header.nextElementSibling;
+                          toggleList(content.id);
+                      });
+                  });
+              });
+          </script>
+
+
+            <div class="collapsible-header"><span class="arrow">&#9654;</span>Off-list Recs</div>
+              <ul class="collapsible-content" id="offbooks">
+                  <li>Moments of Reprieve by Primo Levi</li>
+                  <li>House of Leaves by Mark Z. Danielewski</li>
+                  <li>Kings of the Wyld by Nicholas Eames</li>
+                  <li>Mort by Terry Pratchett</li>
+                  <li>Lincoln in the Bardo by George Saunders</li>
+                  <li>The Expanse (Series) by James S. A. Corey</li>
+                  <li>The Way of Kings by Brandon Sanderson</li>
+              </ul>
+            <div class="collapsible-header"><span class="arrow">&#9654;</span>Non-Fiction Recs</div>
+              <ul class="collapsible-content" id="nonfiction">
+                <li>The End of the World Is Just the Beginning: Mapping the Collapse of Globalization by Peter Zeihan</li>
+                <li></li>
+            <!-- Add more nonfiction books as needed -->
+              </ul>
+        </aside>
+        <div class="empty-space"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>tsxyz</title>
+    <description>Public posts from @tsxyz@indieweb.social</description>
+    <link>https://indieweb.social/@tsxyz</link>
+    <image>
+      <url>https://cdn.masto.host/indiewebsocial/accounts/avatars/111/863/028/224/730/868/original/e8fa0f263b726705.jpeg</url>
+      <title>tsxyz</title>
+      <link>https://indieweb.social/@tsxyz</link>
+    </image>
+    <lastBuildDate>Tue, 06 Feb 2024 12:42:17 +0000</lastBuildDate>
+    <webfeeds:icon>https://cdn.masto.host/indiewebsocial/accounts/avatars/111/863/028/224/730/868/original/e8fa0f263b726705.jpeg</webfeeds:icon>
+    <generator>Mastodon v4.2.5</generator>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884588641422766</guid>
+      <link>https://indieweb.social/@tsxyz/111884588641422766</link>
+      <pubDate>Tue, 06 Feb 2024 12:42:17 +0000</pubDate>
+      <description>&lt;p&gt;Fixed! Set the word-wrap and overflow-wrap within &amp;#39;&lt;a href="https://indieweb.social/tags/toots" class="mention hashtag" rel="tag"&gt;#&lt;span&gt;toots&lt;/span&gt;&lt;/a&gt;-list p&amp;#39; to break-word. :)&lt;/p&gt;</description>
+      <category>toots</category>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884561710599877</guid>
+      <link>https://indieweb.social/@tsxyz/111884561710599877</link>
+      <pubDate>Tue, 06 Feb 2024 12:35:26 +0000</pubDate>
+      <description>&lt;p&gt;As I feared, a long url would break the box on the homepage. I know it&amp;#39;s a CSS line that I need, but I always run into trouble when those scrollbars appear...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884556452333192</guid>
+      <link>https://indieweb.social/@tsxyz/111884556452333192</link>
+      <pubDate>Tue, 06 Feb 2024 12:34:06 +0000</pubDate>
+      <description>&lt;p&gt;To access this feed you can either use Mastodon&amp;#39;s own, or my hosted version:&lt;br /&gt;&lt;a href="https://tsxyz.neocities.org/micro/mastodon_feed.rss" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;tsxyz.neocities.org/micro/mast&lt;/span&gt;&lt;span class="invisible"&gt;odon_feed.rss&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="https://indieweb.social/@tsxyz.rss" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;indieweb.social/@tsxyz.rss&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884549489575766</guid>
+      <link>https://indieweb.social/@tsxyz/111884549489575766</link>
+      <pubDate>Tue, 06 Feb 2024 12:32:20 +0000</pubDate>
+      <description>&lt;p&gt;Submitted my site to the marginalia.nu indieweb search engine. You can do the same with a simple fork and pull request of the sites.txt, add your own domain. Instructions here: &lt;a href="https://github.com/MarginaliaSearch/submit-site-to-marginalia-search" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;github.com/MarginaliaSearch/su&lt;/span&gt;&lt;span class="invisible"&gt;bmit-site-to-marginalia-search&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881924031969644</guid>
+      <link>https://indieweb.social/@tsxyz/111881924031969644</link>
+      <pubDate>Tue, 06 Feb 2024 01:24:38 +0000</pubDate>
+      <description>&lt;p&gt;Hooray! Added a moveable window with my most recent toots to the homepage! As usual I started with an LLM to outline what I wanted to happen and that normally gets me 80% of the way there, then I tweak the output or read between the lines if I get an unexpected outcome.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881809989591952</guid>
+      <link>https://indieweb.social/@tsxyz/111881809989591952</link>
+      <pubDate>Tue, 06 Feb 2024 00:55:38 +0000</pubDate>
+      <description>&lt;p&gt;You can find this feed being updated now on &lt;a href="https://tsxyz.neocities.org/micro" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;tsxyz.neocities.org/micro&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt; - I have a python script in Task Scheduler that downloads the .rss (just append .rss to your profile URL, who knew!), and then uses the Neocities CLI to delete and then upload the latest version of the .rss (because Neocities disallows loading external .rss on the free version). Then bit of javascript in the html reads the .rss and populates the page. Next step is to get most recent few toots on the homepage somewhere...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881798745866483</guid>
+      <link>https://indieweb.social/@tsxyz/111881798745866483</link>
+      <pubDate>Tue, 06 Feb 2024 00:52:46 +0000</pubDate>
+      <description>&lt;p&gt;This is the beginning of the record of updates and processes for updating my website &lt;a href="https://tsxyz.neocities.org" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;tsxyz.neocities.org&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt; :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

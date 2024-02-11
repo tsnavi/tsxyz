@@ -1,0 +1,126 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: 'iA Writer Mono S', monospace;
+    margin: 0;
+    background-color: #f4f0e8;
+    color: #181817;
+}
+
+.container {
+    display: flex;
+    background-color: #f4f0e8; /* Set the background color for the entire page */
+    width: 100%;
+}
+
+.scrolling-column {
+    width: 50%;
+    padding: 2em 0 2em 2em; /* top right bottom left */
+    overflow-y: auto;
+}
+
+
+.static-column {
+    width: 25%;
+    padding: 2em 5%;
+    background-color: #f4f0e8; /* Example background color for the static column */
+    padding-top: 6%;
+    line-height: 1.5em;
+}
+
+.static-column li{
+    line-height: 0.6em;
+}
+
+.static-column li.rainbow{
+    line-height: 1em;
+}
+
+.empty-space {
+    width: 15%;
+}
+
+.rainbow {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 4s ease-in-out infinite;
+    background-size: 400% 120%; /* Increase the background size to account for potential cut-off */
+}
+
+/* Style for the list items and marker */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+li::marker {
+    content: ""; /* Use tilde (~) as the marker */
+    margin-right: 0.5em; /* Adjust the spacing between the marker and text */
+}
+
+@media(max-width: 767px) {
+    .rainbow {
+        background-size: 400% 140%;
+        font-size: 1em; /* Adjust the font size for mobile */
+        line-height: 1.5; /* Adjust the line height for mobile */
+        padding-top: 0.5em; /* Adjust top padding for mobile */
+        padding-bottom: 0.5em; /* Adjust bottom padding for mobile */
+    }
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.collapsible-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f4f0e8;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-right: 10px;
+    transition: transform 0.3s; /* Add a transition effect for smooth rotation */
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.collapsible-content.show {
+    display: block;
+}
+
+.collapsible-content li {
+    line-height:1em;
+}
+

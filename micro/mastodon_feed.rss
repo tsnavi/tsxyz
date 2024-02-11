@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>tsxyz</title>
+    <description>Public posts from @tsxyz@indieweb.social</description>
+    <link>https://indieweb.social/@tsxyz</link>
+    <image>
+      <url>https://cdn.masto.host/indiewebsocial/accounts/avatars/111/863/028/224/730/868/original/e8fa0f263b726705.jpeg</url>
+      <title>tsxyz</title>
+      <link>https://indieweb.social/@tsxyz</link>
+    </image>
+    <lastBuildDate>Sat, 10 Feb 2024 19:20:57 +0000</lastBuildDate>
+    <webfeeds:icon>https://cdn.masto.host/indiewebsocial/accounts/avatars/111/863/028/224/730/868/original/e8fa0f263b726705.jpeg</webfeeds:icon>
+    <generator>Mastodon v4.2.5</generator>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111908805490382375</guid>
+      <link>https://indieweb.social/@tsxyz/111908805490382375</link>
+      <pubDate>Sat, 10 Feb 2024 19:20:57 +0000</pubDate>
+      <description>&lt;p&gt;Published my mastodon-to-neocities workaround on Github: &lt;a href="https://github.com/tsnavi/mastodon-to-neocities/" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;github.com/tsnavi/mastodon-to-&lt;/span&gt;&lt;span class="invisible"&gt;neocities/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111907861437372107</guid>
+      <link>https://indieweb.social/@tsxyz/111907861437372107</link>
+      <pubDate>Sat, 10 Feb 2024 15:20:52 +0000</pubDate>
+      <description>&lt;p&gt;Added my method for displaying my toots.rss on /micro to Github, please feel free to use this. This is more of a &amp;quot;how to dynamically show .rss in html&amp;quot; tool, and later I&amp;#39;ll be adding my full method for mastodon.rss&amp;gt;download&amp;gt;parse&amp;gt;upload&amp;gt;display specific to Neocities.org (workaround for the free-tier CSP restriction).&lt;br /&gt;&lt;a href="https://github.com/tsnavi/js-rss-reader" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;github.com/tsnavi/js-rss-reade&lt;/span&gt;&lt;span class="invisible"&gt;r&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111902770157045675</guid>
+      <link>https://indieweb.social/@tsxyz/111902770157045675</link>
+      <pubDate>Fri, 09 Feb 2024 17:46:05 +0000</pubDate>
+      <description>&lt;p&gt;Do my replies show on my website?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111902756848076096</guid>
+      <link>https://indieweb.social/@tsxyz/111902756848076096</link>
+      <pubDate>Fri, 09 Feb 2024 17:42:42 +0000</pubDate>
+      <description>&lt;p&gt;Created some Basic Tasks in task scheduler that will automate the Mastodon Feed update, and the /Journal update. So now I just have to update Mastodon or the journal.md local file and The Computer will take care of the rest 😄💻&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111896397950897708</guid>
+      <link>https://indieweb.social/@tsxyz/111896397950897708</link>
+      <pubDate>Thu, 08 Feb 2024 14:45:33 +0000</pubDate>
+      <description>&lt;p&gt;Created /journal with the help of &lt;span class="h-card" translate="no"&gt;&lt;a href="https://indieweb.social/@capjamesg" class="u-url mention"&gt;@&lt;span&gt;capjamesg&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; in the indieweb discord - Using the Markdown python library, I author the updates in a .md file, then a py script converts it to html (adding css styling along the way), and then a py script to upload using the Neocities CLI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111893027468988204</guid>
+      <link>https://indieweb.social/@tsxyz/111893027468988204</link>
+      <pubDate>Thu, 08 Feb 2024 00:28:23 +0000</pubDate>
+      <description>&lt;p&gt;Looks like Markdown would be a good way of adding a simplistic CMS into Neocities...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111893008622449085</guid>
+      <link>https://indieweb.social/@tsxyz/111893008622449085</link>
+      <pubDate>Thu, 08 Feb 2024 00:23:36 +0000</pubDate>
+      <description>&lt;p&gt;I think my next page is going to be a sort of journal, where i can document the things i&amp;#39;ve been doing, getting into it, thinking about etc. I find that when I look back on certain periods in recent years they all sort of blur into each other and I think it&amp;#39;d be cool to look at January 2024 and say &amp;quot;That&amp;#39;s when I got into websites again. That&amp;#39;s also when I was listening to Swans and discovered that Shostakovich chamber symphony I love&amp;quot; - Not sure what format it&amp;#39;s going to take yet...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111885610133484217</guid>
+      <link>https://indieweb.social/@tsxyz/111885610133484217</link>
+      <pubDate>Tue, 06 Feb 2024 17:02:04 +0000</pubDate>
+      <description>&lt;p&gt;Bit concerned that I&amp;#39;ll end up hosting a .rss file that is a few megabytes big, and that people will need to download each time they come on the site, so went looking at ways of shrinking it down, but couldn&amp;#39;t find anything that seemed to solve the problem without loads of work. Cross that bridge when I come to it I suppose, but will likely just put a hard cap on the amount of updates that I request from the original .rss&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884591821383814</guid>
+      <link>https://indieweb.social/@tsxyz/111884591821383814</link>
+      <pubDate>Tue, 06 Feb 2024 12:43:05 +0000</pubDate>
+      <description>&lt;p&gt;hmm, i don&amp;#39;t really what that # to make a URL. another task emerges. altho tbh i don&amp;#39;t think i care enough to go mucking around with the javascript...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884588641422766</guid>
+      <link>https://indieweb.social/@tsxyz/111884588641422766</link>
+      <pubDate>Tue, 06 Feb 2024 12:42:17 +0000</pubDate>
+      <description>&lt;p&gt;Fixed! Set the word-wrap and overflow-wrap within &amp;#39;&lt;a href="https://indieweb.social/tags/toots" class="mention hashtag" rel="tag"&gt;#&lt;span&gt;toots&lt;/span&gt;&lt;/a&gt;-list p&amp;#39; to break-word. :)&lt;/p&gt;</description>
+      <category>toots</category>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884561710599877</guid>
+      <link>https://indieweb.social/@tsxyz/111884561710599877</link>
+      <pubDate>Tue, 06 Feb 2024 12:35:26 +0000</pubDate>
+      <description>&lt;p&gt;As I feared, a long url would break the box on the homepage. I know it&amp;#39;s a CSS line that I need, but I always run into trouble when those scrollbars appear...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884556452333192</guid>
+      <link>https://indieweb.social/@tsxyz/111884556452333192</link>
+      <pubDate>Tue, 06 Feb 2024 12:34:06 +0000</pubDate>
+      <description>&lt;p&gt;To access this feed you can either use Mastodon&amp;#39;s own, or my hosted version:&lt;br /&gt;&lt;a href="https://tsxyz.neocities.org/micro/mastodon_feed.rss" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;tsxyz.neocities.org/micro/mast&lt;/span&gt;&lt;span class="invisible"&gt;odon_feed.rss&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="https://indieweb.social/@tsxyz.rss" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;indieweb.social/@tsxyz.rss&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111884549489575766</guid>
+      <link>https://indieweb.social/@tsxyz/111884549489575766</link>
+      <pubDate>Tue, 06 Feb 2024 12:32:20 +0000</pubDate>
+      <description>&lt;p&gt;Submitted my site to the marginalia.nu indieweb search engine. You can do the same with a simple fork and pull request of the sites.txt, add your own domain. Instructions here: &lt;a href="https://github.com/MarginaliaSearch/submit-site-to-marginalia-search" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;github.com/MarginaliaSearch/su&lt;/span&gt;&lt;span class="invisible"&gt;bmit-site-to-marginalia-search&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881924031969644</guid>
+      <link>https://indieweb.social/@tsxyz/111881924031969644</link>
+      <pubDate>Tue, 06 Feb 2024 01:24:38 +0000</pubDate>
+      <description>&lt;p&gt;Hooray! Added a moveable window with my most recent toots to the homepage! As usual I started with an LLM to outline what I wanted to happen and that normally gets me 80% of the way there, then I tweak the output or read between the lines if I get an unexpected outcome.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881809989591952</guid>
+      <link>https://indieweb.social/@tsxyz/111881809989591952</link>
+      <pubDate>Tue, 06 Feb 2024 00:55:38 +0000</pubDate>
+      <description>&lt;p&gt;You can find this feed being updated now on &lt;a href="https://tsxyz.neocities.org/micro" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;tsxyz.neocities.org/micro&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt; - I have a python script in Task Scheduler that downloads the .rss (just append .rss to your profile URL, who knew!), and then uses the Neocities CLI to delete and then upload the latest version of the .rss (because Neocities disallows loading external .rss on the free version). Then bit of javascript in the html reads the .rss and populates the page. Next step is to get most recent few toots on the homepage somewhere...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://indieweb.social/@tsxyz/111881798745866483</guid>
+      <link>https://indieweb.social/@tsxyz/111881798745866483</link>
+      <pubDate>Tue, 06 Feb 2024 00:52:46 +0000</pubDate>
+      <description>&lt;p&gt;This is the beginning of the record of updates and processes for updating my website &lt;a href="https://tsxyz.neocities.org" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;tsxyz.neocities.org&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt; :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

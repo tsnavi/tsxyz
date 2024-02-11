@@ -1,0 +1,159 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Serif Libre', serif;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%; /* Decreased for a narrower layout */
+    min-width: 0;
+    margin: auto;
+    background-color: #F8F8F8;
+}
+
+.left-column, .right-column {
+    padding: 0.5em;
+    border: 1px solid #ccc; /* Light grey border */
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow around the container */
+    background-color: #F8F8F8;
+}
+
+.left-column {
+    width: calc(75% - 10px);
+    overflow-y: auto;
+    height: calc(100vh - 40px);
+    margin-right: 20px;
+}
+
+.right-column {
+    width: calc(25% - 10px);
+    height: 350px; /* Adjust as needed */
+    position: sticky;
+    top: 0.5em;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    font-size: 18px;
+}
+
+.bottom {
+  position:absolute;
+  display:flex;
+  flex-direction: row;
+  bottom: 0;
+  justify-content:space-between;
+}
+
+.bot {
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI", "Arial", sans-serif;
+  padding: 8px;  
+}
+
+
+/* Style for the word section */
+.word-section {
+    padding: 0.5em;
+    font-size: 16px;
+}
+
+/* Style for the German word and English word */
+.word {
+    display: flex; /* Use flexbox to control alignment */
+    align-items: baseline; /* Align items to their baseline for vertical alignment */
+}
+
+.word strong {
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+}
+.word em {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    float: left;
+    margin-left: 5px;
+}
+
+.word .date {
+    font-style: italic;
+    float: right;
+    font-size: 12px;
+    color: gray;
+    margin-left: auto;
+}
+
+/* Style for the sentence */
+.sentence {
+}
+
+.sentence u {
+    text-decoration: underline;
+}
+
+/* Style for optional notes */
+.notes {
+    font-style: italic;
+    font-size:0.75em;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode, html.dark-mode {
+    background-color: #333; /* Charcoal */
+    color: #F8F8F8; /* Off-White */
+}
+
+.dark-mode .container {
+    background-color: #333; /* Charcoal */
+}
+
+.dark-mode .left-column, .dark-mode .right-column {
+    background-color: #333; /* Charcoal */
+    border: 1px solid #666666; /* Dark Gray */
+}
+
+.dark-mode .word-section {
+    background-color: #333; /* Charcoal */
+}
+
+.bot.mode-toggle {
+  cursor: pointer;
+  transition: color 0.7s ease; /* Smooth color transition */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        padding-top:0;
+    }
+
+    .left-column, .right-column {
+        width: auto;
+        margin-right: 0;
+    }
+    
+    .right-column {
+        font-size: 0.8em; /* Adjust text size for smaller screens */
+        order: -1; /* Change the order to -1 to move it to the top */
+        height: 17vh;
+        overflow-y:auto;
+        position: relative; /* Remove sticky positioning */
+        top: auto; /* Remove sticky positioning */
+        margin-top: 0; /* Adjusted margin for better spacing */
+        margin-bottom:0;
+    }
+}
