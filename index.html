@@ -51,7 +51,7 @@
       });
       
       // Fetch and display latest toots
-      fetch('micro/mastodon_feed.rss')
+      fetch('https://indieweb.social/@tsxyz.rss')
           .then(response => {
               if (!response.ok) {
                   throw new Error('Network response was not ok');
