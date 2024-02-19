@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tom lernt Deutsch</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/deutsch/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -36,16 +36,17 @@
     <div class="left-column" id="leftColumn">
       <!-- Data will be dynamically added here -->
     </div>
-    <div class="right-column">
+    <div class="right-column" id="rightColumn">
       <strong><div class="de-char" style="font-size: 64px"></div></strong>
-      <div>Ich bin <strong>Tom</strong> und ich lerne <strong>Deutsch</strong></div>
+      <div class="de-desc">Ich bin <strong>Tom</strong> und ich lerne <strong>Deutsch</strong></div>
       <div class="bottom">
-        <!--<div class="bot">📧</div>
-        <div class="bot">🔗</div>-->
+        <!--<div class="bot">📧</div>-->
         <div id="darkModeToggle" class="bot mode-toggle" onclick="toggleDarkMode()">🌙</div>
       </div>
     </div>
   </div>
+
+
 
   
     <script>
@@ -67,28 +68,27 @@
         deCharDiv.innerHTML = `${randomCharacter}`;
     </script>
 
-  <script>
-    // Fetch and parse the XML file
-    fetch('yourdata.xml')
-      .then(response => response.text())
-      .then(data => {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(data, 'application/xml');
+<script>
+  // Fetch and parse the Markdown file
+  fetch('/deutsch/md.md')
+    .then(response => response.text())
+    .then(data => {
+      // Split the Markdown content into individual word sections
+      const wordSections = data.split('# ');
 
-        // Get the root element of the XML file
-        const words = xmlDoc.getElementsByTagName('word');
+      // Get the leftColumn element to append word sections
+      const leftColumn = document.getElementById('leftColumn');
 
-        // Get the leftColumn element to append word sections
-        const leftColumn = document.getElementById('leftColumn');
-
-        // Loop through each word entry and create a word-section
-        for (let i = 0; i < words.length; i++) {
-          const word = words[i];
-          const de = word.getElementsByTagName('de')[0].textContent;
-          const en = word.getElementsByTagName('en')[0].textContent;
-          const date = word.getElementsByTagName('date')[0].textContent;
-          const sentence = word.getElementsByTagName('sentence')[0].textContent;
-          const notes = word.getElementsByTagName('notes')[0].textContent;
+      // Loop through each word section and create a word-section
+      wordSections.forEach(section => {
+        if (section.trim() !== '') {
+          // Extract word details from the Markdown section
+          const lines = section.split('\n');
+          const de = lines[1].split(': ')[1];
+          const en = lines[2].split(': ')[1];
+          const date = lines[3].split(': ')[1];
+          const sentence = lines[4].split(': ')[1];
+          const notes = lines[5].split(': ')[1];
 
           // Create a new word-section
           const newWordSection = document.createElement('div');
@@ -111,9 +111,11 @@
           // Append the new word-section to the leftColumn
           leftColumn.appendChild(newWordSection);
         }
-      })
-      .catch(error => console.error('Error fetching XML:', error));
-    </script>
+      });
+    })
+    .catch(error => console.error('Error fetching Markdown:', error));
+</script>
+
 
 </body>
 </html>

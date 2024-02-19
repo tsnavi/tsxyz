@@ -14,7 +14,10 @@ body, html {
     min-width: 0;
     margin: auto;
     background-color: #F8F8F8;
+	position: relative; /*new*/
 }
+
+
 
 .left-column, .right-column {
     padding: 0.5em;
@@ -31,9 +34,9 @@ body, html {
     margin-right: 20px;
 }
 
-.right-column {
+/* .right-column {
     width: calc(25% - 10px);
-    height: 350px; /* Adjust as needed */
+    height: 350px; 
     position: sticky;
     top: 0.5em;
     overflow-y: auto;
@@ -44,9 +47,10 @@ body, html {
     align-items:center;
     text-align:center;
     font-size: 18px;
-}
+} */
 
-.bottom {
+
+.bottom , .form-bottom {
   position:absolute;
   display:flex;
   flex-direction: row;
@@ -141,12 +145,12 @@ body.dark-mode, html.dark-mode {
         padding-top:0;
     }
 
-    .left-column, .right-column {
+    .left-column, .right-column, #portwortForm {
         width: auto;
         margin-right: 0;
     }
     
-    .right-column {
+    .right-column, #postwortForm {
         font-size: 0.8em; /* Adjust text size for smaller screens */
         order: -1; /* Change the order to -1 to move it to the top */
         height: 17vh;
@@ -157,3 +161,28 @@ body.dark-mode, html.dark-mode {
         margin-bottom:0;
     }
 }
+
+.right-column, #postwortForm {
+    padding: 0.5em;
+    border: 1px solid #ccc; /* Light grey border */
+    margin-top: 40px; /* Adjust spacing */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow around the container */
+    background-color: #F8F8F8;
+    width: calc(25% - 10px); /* Adjust as needed */
+    overflow-y: auto;
+    height: 350px; /* Adjust as needed */
+    position: sticky;
+    top: 0.5em;
+    margin-bottom: 20px;
+    display: flex; /* Arrange children in a row */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+	justify-content: center;
+}
+
+#postwortForm {
+display:none;}
+.de-desc, .de-char {
+align-items:center;}

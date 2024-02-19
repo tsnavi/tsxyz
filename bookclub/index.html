@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://github.com/tsnavi" rel="me">
+    <link rel="stylesheet" type="text/css" href="/bookclub/style.css">
     <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>"/>
     <title>Book Club 📚</title>
     <script>
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch the XML file
-    fetch('example.xml')
+    fetch('/bookclub/example.xml')
         .then(response => response.text())
         .then(data => {
             // Parse the XML data
@@ -78,13 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
         </article>
         <aside class="static-column">
             <ul>
-                <li>Knowles</li>
+                <li class="rainbow">Knowles</li>
                 <li>Tom</li>
                 <li>Sean</li>
                 <li>Joe</li>
                 <li>John</li>
                 <li>Rob</li>
-                <li class="rainbow">Tilly</li>
+                <li>Tilly</li>
             </ul>
                   
           <style>

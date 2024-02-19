@@ -1,5 +1,10 @@
 <books>
     <book>
+      <title>x</title>
+      <author>x</author>
+      <selectedBy>Knowles</selectedBy>
+    </book>
+    <book>
       <title>Diary</title>
       <author>Chuck Palahniuk</author>
       <selectedBy>Tilly</selectedBy>

@@ -3,13 +3,18 @@
     <html>
     <head>
         <title>Journal</title>
-        
-    <style>
-        body {
-            font-family: MS Gothic, monospace;
-            background-color: #f0f0f0;
+		    <!-- <script src="/journal/marked.js"></script> -->
+			<script type="module" src="/journal/zero-md.min.js"></script>    
+    </head>
+    <body>
+<div id="markdown-content"></div> <!-- populate .md here -->
+
+<zero-md src="/journal/journal.md">    <template><style>
+        * {font-family: MS Gothic, monospace;}
+		body {
+			background-color: #f0f0f0;
             padding: 20px;
-        }
+		}
         h1 {
             color: #fff;
             font-size: 1.5em;
@@ -23,45 +28,11 @@
             font-size:1em;
             margin-block-start:0em;
             }
-        /* Add more styles as needed */
-    </style>
-    
-    </head>
-    <body>
-        <h1>February 2024</h1>
-<h2>Web</h2>
-<ul>
-<li>Really getting into building websites, which started mid-Jan</li>
-<li>Made the /updates page, and a floating box on the homepage that contains the 4 latest Toots from my Mastodon account.</li>
-<li>Joined the IndieWeb Discord where I've been learning a lot and talking to likeminded folks about more intentional, better uses of the web!</li>
-</ul>
-<h2>House</h2>
-<ul>
-<li>Took down the aerial on the front of my house, which was threating to come crashing down in the wind! Not without the invaluable help of my friend Joe and my neighbour Lee.</li>
-<li>Scraping out rotten, cracked caulk around windows and reapplying new - hoping to help with drafts, heat, humidity, and noise a little bit!</li>
-</ul>
-<h2>Work</h2>
-<ul>
-<li>Updating client GTM accounts for Google Consent Mode (coming March)</li>
-</ul>
-<h2>Music</h2>
-<ul>
-<li>Back to writing music again with <mark>Leaves</mark> - now in the early ideas phase. Not sure what shape the next record is going to take yet, but the aim with this next one or the one following is to be really ambitious and create a fully-realised, highly ambitious album.</li>
-<li><a href="https://weareleavesband.bandcamp.com/track/this-garden">First single from the first Leaves record released - This Garden</a></li>
-</ul>
-<h2>Listening:</h2>
-<ul>
-<li>Swans (The Seer, My Father)</li>
-<li><a href="https://www.youtube.com/watch?v=KFb81Ug_I70">The Norwegian Chamber Symphony performing Shostakovich's Op 110</a></li>
-<li>Autechre Live (Official and Bootlegs)</li>
-</ul>
-<h2>Watching:</h2>
-<ul>
-<li>Criminal Record ***</li>
-<li>The Boys ****</li>
-<li>Masters of the Air ****</li>
-<li>David Lynch interviews</li>
-</ul>
-    </body>
+		li {font-family: MS Gothic, monospace;)
+    </style></template></zero-md>
+
+
+
+	
     </html>
     

@@ -17,6 +17,9 @@
     <hr>
     <ul>
     <li><a rel=”nofollow” href="https://pastebin.com/f6qwsa1U">Contact</a></li>
+	<form id="guestbook-form" style="margin-top:7px"><label for="name" style="font-size:11px">Sign your name in the guestbook:</label><br>
+	<input type="text" id="name" name="name" style="height:11px;width:80px;font-size:11px;font-family:MS Gothic" required>
+	<button style="margin-left:5px; font-size:11px; font-family:MS Gothic" type="submit">Submit</button></form>
     </ul>
     
         <!-- Movable window -->
@@ -98,7 +101,9 @@
           return temp.innerHTML;
       }
     </script>
-    
+    <div id="entries" style="height:300px; font-family:MS Gothic; font-size:13px"></div>
+	<script src="/guestbook/script.js"></script>
+	<script src="/guestbook/shuffle.js"></script>
     <div id="webring"><a href="https://wiredcollective.neocities.org/"><img src="https://wiredcollective.neocities.org/webringimages/wiredcollectivebutton.png" alt="WIRED COLLECTIVE WEBRING"></a></div>
     <link href="https://github.com/tsnavi" rel="me">
   </body>
